@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Batatabit</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -15,7 +15,7 @@
         <div class="header--title-container">
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header--button">Conoce nuestros planes <span></span></a>
+            <a href="#plans" class="header--button">Conoce nuestros planes <span></span></a>
         </div>
     </header>
     <main class="main">
@@ -101,8 +101,56 @@
                 </article>
             </section>
         </section>
-        <section></section>
-        <section></section>
+        <section class="bitcoin-img-container">
+            <h2>Conócelo hoy.</h2>
+        </section>
+        <section id="plans" class="main-plans-container">
+            <div class="plans--title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+            <section class="plans-container--slider">
+                <article class="plans-container--card" id="basicPlanCard">
+                    <p class="basic">Básico</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Mensual</h3>
+                        <p class="plan-card--price"><span>$</span>19</p>
+                        <p class="plan-card--saving">
+                            *Plan básico, aunque con todas las ventajas.
+                        </p>
+                        <button class="plan-card--ca">Escoger este <span></span></button>
+                    </div>
+                    <span class="plans-arrow-left" onclick="showUnlimitedCard2()"></span>
+                    <span class="plans-arrow-right" onclick="showRecommendedCard2()"></span>
+                </article>
+                <article class="plans-container--card" id="recommendedPlanCard">
+                    <p class="recommended">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">
+                            *Ahorras $129 comparado al plan mensual.
+                        </p>
+                        <button class="plan-card--ca">Escoger este <span></span></button>
+                    </div>
+                    <span class="plans-arrow-left" onclick="showBasicCard()"></span>
+                    <span class="plans-arrow-right" onclick="showUnlimitedCard()"></span>
+                </article>
+                <article class="plans-container--card-unlimited" id="unlimitedPlanCard">
+                    <p class="unlimited">Ilimitado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title-unlimited">De por vida</h3>
+                        <p class="plan-card--price-unlimited"><span>$</span>199</p>
+                        <p class="plan-card--saving-unlimited">
+                            *Exclusivo para los primeros 100 clientes, con un precio especial.
+                        </p>
+                        <button class="plan-card--ca-unlimited">Escoger este <span></span></button>
+                    </div>
+                    <span class="plans-arrow-left" onclick="showRecommendedCard()"></span>
+                    <span class="plans-arrow-right" onclick="showBasicCard2()"></span>
+                </article>
+            </section>
+        </section>
     </main>
     <footer class="footer"></footer>
     <script src="./index.js"></script>

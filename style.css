@@ -14,7 +14,7 @@
 /*VARS*/
 :root {
     /*Colores*/
-    --bitcoin-orange: ##F7931A;
+    --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
@@ -28,6 +28,8 @@ html {
     /*para usar rem*/
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    /*para que el scroll sea más suave*/
+    scroll-behavior: smooth;
 }
 /*HEADER*/
 .header {
@@ -277,7 +279,7 @@ html {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -321,3 +323,191 @@ html {
     line-height: 1.8rem;
     color: #808080;
 }
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url(./assets/img/bitcoinbaby_2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+/*Seccción planes*/
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    padding: 65px 0;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+.plans--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p {
+    padding: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans-container--card,
+.plans-container--card-unlimited {
+    position: relative;
+    width: 60%;
+    min-width: 190px;
+    max-width: 240px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.plans-container--card {
+    background-color: var(--just-white);
+}
+.plans-container--card-unlimited {
+    background-color: var(--black);
+}
+.recommended,
+.basic,
+.unlimited {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    border-radius: 8px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.2rem;
+    padding: 6px;
+    font-weight: 700;
+    line-height: 14.52px;
+    font-family: "Inter",sans-serif;
+}
+.recommended {
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+.basic {
+    background-color: var(--secondary-blue);
+    color: var(--just-white);
+}
+.unlimited {
+    background-color: var(--grey);
+    color: var(--warn-black);
+}
+.plan-card--title,
+.plan-card--title-unlimited {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.plan-card--title,
+.plan-card--price {
+    color: black;
+}
+.plan-card--title-unlimited,
+.plan-card--price-unlimited {
+    color: var(--just-white);
+}
+.plan-card--price,
+.plan-card--price-unlimited {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+}
+.plan-card--price span,
+.plan-card--price-unlimited span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: relative;
+    bottom: 29px;
+    right: 2px;
+}
+.plan-card--saving,
+.plan-card--saving-unlimited {
+    font-size: 1.2rem;
+}
+.plan-card--saving {
+    color: #757575;
+}
+.plan-card--saving-unlimited {
+    color: var(--off-white);
+}
+.plan-card--ca,
+.plan-card--ca-unlimited {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+.plan-card--ca {
+    background-color: #faf8f7;
+    color: var(--black);
+}
+.plan-card--ca-unlimited {
+    background-color: var(--warn-black);
+    color: var(--just-white);
+}
+.plan-card--ca span,
+.plan-card--ca-unlimited span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/arrow_right_orange.svg');
+    vertical-align: text-bottom;
+}
+.plans-arrow-left,
+.plans-arrow-right {
+    display: inline-block;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 120px;
+}
+.plans-arrow-left {
+    background-image: url('./assets/icons/arrow_left_gray.svg');
+    right: 150px;
+}
+.plans-arrow-right {
+    background-image: url('./assets/icons/arrow_right_gray.svg');
+    left: 150px;
+}
+/*Función slide JS :)*/
+#basicPlanCard,
+#unlimitedPlanCard {
+    display: none;
+}
+
+
+
+
+
+/*FOOTER*/
