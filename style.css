@@ -650,6 +650,7 @@ html {
         display: flex;
         flex-wrap: wrap;
         column-gap: 20px;
+        justify-content: center;
     }
     .recommended,
     .basic,
