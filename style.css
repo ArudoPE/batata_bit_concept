@@ -531,3 +531,178 @@ html {
     text-decoration: none;
     color: var(--just-white);
 }
+/*MEDIA QUERIES*/
+@media (min-width:640px) {
+    /*HEADER*/
+    .header {
+        height: 420px;
+    }
+    .header img {
+        width: 320px;
+        height: auto;
+    }
+    .header--title-container h1 {
+        font-size: 4.4rem;
+        line-height: 4.6rem;
+    }
+    .header--title-container p,
+    .main-exchange-container p,
+    .product-detail--title p,
+    .plans--title p {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+    .header--title-container .header--button {
+        top: 363px;
+        font-size: 2.2rem;
+        width: auto;
+        height: auto;
+        left: calc(50% - 155.5px);
+    }
+    /*MAIN*/
+    .main-exchange-container .backgroundImg {
+        width: 400px;
+        height: 400px;
+    }
+    .main-exchange-container h2,
+    .product-detail--title h2,
+    .bitcoin-img-container h2,
+    .plans--title h2 {
+        font-size: 3.4rem;
+        line-height: 3.6rem;
+    }
+    .main-comision-table {
+        display: block;
+    }
+    .main-tables-container {
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+    }
+    .main-currency-table .currency-table--title,
+    .main-comision-table .comision-table--title {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+        right: 0;
+    }
+    .currency-table-box{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .table-box-number {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .currency-table--container,
+    .comision-table--container {
+        grid-template-columns: 135px 100px;
+    }
+    .main-currency-table .currency-table--date p,
+    .main-comision-table .comision-table--date p{
+        padding: 14px;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: 20px;
+    }
+    .product-detail--batata-logo {
+        width: 86px;
+        height: 52px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        top: -24px;
+    }
+    .product-detail--card .clock,
+    .product-detail--card .eye,
+    .product-detail--card .dollar,
+    .product-detail--card .check {
+        width: 40px;
+        height: 40px;
+    }
+    .product--card-title {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+    .product--card-body {
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+    .bitcoin-img-container {
+        height: 40vh;
+    }
+    .main-cards--container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .currency--right-arrow,
+    .currency--left-arrow,
+    .plans-arrow-left,
+    .plans-arrow-right,
+    .comision--left-arrow span {
+        display: none;
+    }
+    #basicPlanCard,
+    #unlimitedPlanCard {
+        display: block;
+    }
+    .plans-container--slider {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    .recommended,
+    .basic,
+    .unlimited {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        top: -20px;
+    }
+    .basic {
+        left: calc(50% - 45px);
+    }
+    .unlimited {
+        left: calc(50% - 56px);
+    }
+    .recommended {
+        left: calc(50% - 86px);
+    }
+    .plans-container--card,
+    .plans-container--card-unlimited {
+        min-width: 230px;
+        max-width: 260px;
+        height: 260px;
+    }
+    .plan-card--price,
+    .plan-card--price-unlimited {
+        font-size: 6rem;
+    }
+    .plan-card--price span,
+    .plan-card--price-unlimited span {
+        font-size: 1.6rem;
+    }
+    .plan-card--title,
+    .plan-card--title-unlimited {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .plan-card--saving,
+    .plan-card--saving-unlimited {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    .plan-card--ca {
+        margin-top: 40px;
+    }
+    .footer .footer-left ul {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .footer-right img {
+        width: 60px;
+        height: 60px;
+    }
+}
